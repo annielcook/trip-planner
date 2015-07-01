@@ -1,6 +1,64 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>{{title}}</h1>
-    <p>Welcome to {{title}}</p>
+  <div class="col-lg-8"></div>
+  <div class="col-lg-4">
+    <div class="selections">
+      <div class="hotel-selection">
+        <h3>Hotels</h3>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select a hotel
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+      </div>
+      <div class="restaurant-selection">
+        <h3>Restaurants</h3>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select a hotel
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+      </div>
+      <div class="todo-selection">
+        <h3>Things To Do</h3>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select a hotel
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+      </div>
+    </div>
+    <div class="itinerary">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Day 1</a></li>
+        <li role="presentation"><a href="#">Day 2</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-plus"></a></li>
+      </ul>
+    </div>
+  </div>
 {% endblock %}
