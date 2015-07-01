@@ -12,10 +12,9 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
+            {% for hotel in hotels %}
+              <li><a href="#">{{hotel.name}}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
@@ -24,14 +23,13 @@
         <h3>Restaurants</h3>
         <div class="dropdown">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select a hotel
+            Select a restaurant
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
+            {% for restaurant in restaurants %}
+              <li><a href="#">{{restaurant.name}}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
@@ -40,14 +38,13 @@
         <h3>Things To Do</h3>
         <div class="dropdown">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select a hotel
+            Select an activity
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
+            {% for todo in todos %}
+              <li><a href="#">{{todo.name}}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
