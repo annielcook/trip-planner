@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  <div class="col-lg-8"></div>
+  <div class="col-lg-8" id='map' style='height: 100vh'></div>
   <div class="col-lg-4">
     <div class="selections">
       <div class="hotel-selection">
@@ -59,6 +59,37 @@
         <li role="presentation"><a href="#">Day 2</a></li>
         <li role="presentation"><a href="#"><span class="glyphicon glyphicon-plus"></a></li>
       </ul>
+      <div class='itinerary-contents'>
+        <div class='itinerary-section'>
+          <h3>My Hotels</h3>
+          <div class='itinerary-hotels'>
+            <ul class='hotel-list'>
+              <li>Andaz Wall St.<span class="glyphicon glyphicon-remove"></span></li>
+            </ul>  
+          </div>  
+        </div>
+        <div class='itinerary-section'>
+          <h3>My Restaurants</h3>
+          <div class='itinerary-restaurants'>
+            <ul class='restaurant-list'>
+              <li>Bouley<span class="glyphicon glyphicon-remove"></span></li>
+              <li>The Capital Grill<span class="glyphicon glyphicon-remove"></span></li>
+            </ul> 
+          </div>
+        </div>
+        <div class='itinerary-section'>
+          <h3>My Things To Do</h3>
+          <div class='itinerary-todos'>
+            <ul class='todos-list'>
+              <li>Museum of Natural History<span class="glyphicon glyphicon-remove"></span></li>
+              <li>Statue of Liberty<span class="glyphicon glyphicon-remove"></span></li>
+              <li>Metropolitan Museum of Art<span class="glyphicon glyphicon-remove"></span></li>
+            </ul> 
+          </div>
+        </div>  
+
+      </div> 
     </div>
+
   </div>
 {% endblock %}
